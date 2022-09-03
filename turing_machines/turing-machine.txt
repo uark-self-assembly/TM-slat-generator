@@ -1,0 +1,21 @@
+Alphabet:
+0,1,BLANK
+Blank Symbol:
+BLANK
+States:
+even,odd,zeroes,ones,halt
+Start State:
+even
+Transitions:
+even,0,even,0,R
+even,1,odd,1,R
+even,BLANK,zeroes,BLANK,L
+odd,0,odd,0,R
+odd,1,even,1,R
+odd,BLANK,ones,BLANK,L
+zeroes,0,zeroes,0,L
+zeroes,1,zeroes,0,L
+zeroes,BLANK,halt,BLANK,X
+ones,0,ones,1,L
+ones,1,ones,1,L
+ones,BLANK,halt,BLANK,X

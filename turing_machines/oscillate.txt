@@ -1,0 +1,15 @@
+Alphabet:
+BLANK,0,1
+Blank Symbol:
+BLANK
+States:
+one,two
+Start State:
+one
+Transitions:
+one,0,two,1,R
+one,1,two,0,R
+one,BLANK,two,BLANK,R
+two,0,one,1,L
+two,1,one,0,L
+two,BLANK,one,BLANK,L
