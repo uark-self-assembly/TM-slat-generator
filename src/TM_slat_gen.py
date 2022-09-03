@@ -26,8 +26,8 @@ if __name__ == '__main__':
 	except:
 		print('\nUnrecognized option: ' + str(sys.argv[1:]))
 
-	input_file = '../turing_machines/turing-machine.txt'
-	output_file = '../slats/TM-tileset.xml'
+	input_file = 'turing-machine.txt'
+	output_file = 'TM-tileset.xml'
 	assembly_input = None
 	verbose = False
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 		print('\nNo input string specified!')
 		DisplayHelp()
 	
-	tape_alphabet, blank_symbol, states, start_state, transitions = GetTMDefinition(input_file)
+	tape_alphabet, blank_symbol, states, start_state, transitions = GetTMDefinition('../turing_machines/' + input_file)
 	a_cells = ['A', 'B', 'C', 'D', 'a', 'b', 'c', 'd',]
 	b_cells = ['W', 'X', 'Y', 'Z', 'w', 'x', 'y', 'z',]
 
@@ -70,7 +70,7 @@ if __name__ == '__main__':
 		print('Saving XML document...\t', end='')
 		start = time()
 
-	TilesetToXML(tile_set, output_file)
+	TilesetToXML(tile_set, '../slats/' + output_file)
 
 	if verbose:
 		end = time()
