@@ -8,10 +8,11 @@ from utils.utils import GetTMDefinition, TilesetToXML
 def DisplayHelp():
 
 	print('-h, --help\t\t\t\tDisplays this help message.')
-	print('-i <input>, --input=<input>\t\tSeed string as input.')
-	print('-f <filename>, --file=<filename>\t[Optional] Text file containing a description of a Turing machine.')
-	print('-o <filename>, --output=<filename>\t[Optional] Name of xml file to output the tileset to.')
+	print('-i <input>, --input=<input>\t\t[Required] Seed string as input.')
+	print('-f <filename>, --file=<filename>\tText file containing a description of a Turing machine.')
+	print('-o <filename>, --output=<filename>\tName of xml file to output the tileset to.')
 	print('-v, --verbose\t\t\t\tRun in verbose mode.')
+	print('-b, --basic\t\t\t\tExactly one operation per row; boundary growth every row.')
 
 	exit()
 
@@ -29,7 +30,8 @@ if __name__ == '__main__':
 	input_file = 'turing-machine.txt'
 	output_file = 'TM-tileset.xml'
 	assembly_input = None
-	verbose = False
+	verbose_mode = False
+	basic_mode = False
 
 	for o, p in options:
 
@@ -42,7 +44,9 @@ if __name__ == '__main__':
 		elif o in ['-o', '--ouptut']:
 			output_file = p
 		elif o in ['-v', '--verbose']:
-			verbose = True
+			verbose_mode = True
+		elif o in ['-s', '--slow']:
+			basic_mode = True
 		else:
 			DisplayHelp()
 
@@ -54,17 +58,26 @@ if __name__ == '__main__':
 	a_cells = ['A', 'B', 'C', 'D', 'a', 'b', 'c', 'd',]
 	b_cells = ['W', 'X', 'Y', 'Z', 'w', 'x', 'y', 'z',]
 
-	if verbose:
+	if verbose_mode:
 		print('\nGenerating tileset...\t', end='')
 		start = time()
+
+	input_slats = []
+	bound_slats = []
+	symbol_slats = []
+	transition_slats = []
 	
-	input_slats = build.GetInputTiles(assembly_input, start_state, blank_symbol, a_cells, b_cells)
-	bound_slats = build.GetBoundaryTiles(blank_symbol, a_cells, b_cells)
-	symbol_slats = build.GetSymbolCopyTiles(tape_alphabet, a_cells, b_cells)
-	transition_slats = build.GetTransitionTiles(transitions, blank_symbol, a_cells, b_cells)
+	if basic_mode:
+		pass
+	else:
+		input_slats = build.GetInputTiles(assembly_input, start_state, blank_symbol, a_cells, b_cells)
+		bound_slats = build.GetBoundaryTiles(blank_symbol, a_cells, b_cells)
+		symbol_slats = build.GetSymbolCopyTiles(tape_alphabet, a_cells, b_cells)
+		transition_slats = build.GetTransitionTiles(transitions, blank_symbol, a_cells, b_cells)
+		
 	tile_set = input_slats + bound_slats + symbol_slats + transition_slats
 
-	if verbose:
+	if verbose_mode:
 		end = time()
 		print(f'{(end - start):.3f}')
 		print('Saving XML document...\t', end='')
@@ -72,7 +85,7 @@ if __name__ == '__main__':
 
 	TilesetToXML(tile_set, '../slats/' + output_file)
 
-	if verbose:
+	if verbose_mode:
 		end = time()
 		print(f'{(end - start):.3f}')
 
@@ -85,7 +98,7 @@ if __name__ == '__main__':
 	print(f'Singly seeded total:\t{len(tile_set)}')
 	print(f'Origami total:\t\t{len(tile_set) - len(input_slats) + len(assembly_input) + 5}')
 
-	if verbose:
+	if verbose_mode:
 		print('\nCounting unique domains... ', end='')
 		start = time()
 		input_domains = {}
