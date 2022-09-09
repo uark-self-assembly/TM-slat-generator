@@ -122,3 +122,21 @@ class MacroTile(Sequence):
 			self.south_east,
 			self.south_east,
 		]
+
+class OrigamiMacrotile(MacroTile):
+	"""
+	Param 'position': The seed row can be thought of as an array where:
+		- Position 0 is the left growth blank
+		- Position 1 is the first input symbol
+		- ...
+		- Position (n-2) is the right growth blank
+		- Position (n-1) is the right growth edge
+	"""
+	def __init__(self, name: str, position: int, color: str) -> None:
+		
+		self.position = position
+		super().__init__(name, color, True)
+
+	def SetOutput(self, glue: str):
+		
+		self.SetGlues(None, glue, None, None)
