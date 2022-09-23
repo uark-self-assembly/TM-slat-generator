@@ -3,6 +3,28 @@ from typing import Union
 import utils.builder_helpers as help
 from utils.slats import CrissCrossSlat, CrissCrossStaple, MacroTile
 
+"""
+For an n-bit input, the seed row consists of:
+	- n macrotiles with input information
+	- 1 left growth blank
+	- 1 right growth blank
+	- 1 right growth edge
+The input, right blank, and right edge macrotiles each use one staple.
+The left blank uses three staples (two west, one east).
+"""
+def GetOrigamiSeed(
+	assembly_input: str,
+	start_state: str,
+	blank: str,
+	a_cells: list[str],
+	b_cells: list[str],
+) -> list[CrissCrossSlat]:
+	
+	slats = []
+	slat_length = CrissCrossSlat.STD_SLAT_LEN
+	binding_thresh = CrissCrossSlat.BINDING_THRESH
+	letters = ['a', 'b', 'c', 'd',]
+
 def GetInputTiles(
 	assembly_input: str,
 	start_state: str,

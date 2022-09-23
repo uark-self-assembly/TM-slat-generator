@@ -140,3 +140,11 @@ class OrigamiMacrotile(MacroTile):
 	def SetOutput(self, glue: str):
 		
 		self.SetGlues(None, glue, None, None)
+
+class OrigamiSeed(Sequence):
+
+	def __init__(self, macrotiles: list[OrigamiMacrotile]):
+		
+		pass
+
+	# def GenerateSlats

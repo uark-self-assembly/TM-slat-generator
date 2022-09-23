@@ -51,7 +51,7 @@ if __name__ == '__main__':
 			DisplayHelp()
 
 	if assembly_input is None:
-		print('\nNo input string specified!')
+		print('\nError: No input string specified!\n')
 		DisplayHelp()
 	
 	tape_alphabet, blank_symbol, states, start_state, transitions = GetTMDefinition('../turing_machines/' + input_file)

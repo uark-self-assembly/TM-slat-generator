@@ -46,7 +46,8 @@ def GetTMDefinition(input_file: str) -> tuple:
 
 def TilesetToXML(
 	tileset: list[Union[CrissCrossSlat, CrissCrossStaple]],
-	output_file: str
+	output_file: str,
+	origami_slats: list[CrissCrossSlat] = None
 ) -> None:
 
 	sys_elem = et.Element('PolyominoSystem')
@@ -102,13 +103,17 @@ def TilesetToXML(
 
 	seed_tiles = et.SubElement(seed_elem, 'Polyominoes')
 
-	for i in range(2):
-		slat_a = et.SubElement(seed_tiles, 'Polyomino')
-		et.SubElement(slat_a, 'PolyominoType').text = 'seed0_a'
-		et.SubElement(slat_a, 'translation').text = f'({i * 2}, 0, 0)'
+	if origami_slats:
+		pass
+	
+	else:
+		for i in range(2):
+			slat_a = et.SubElement(seed_tiles, 'Polyomino')
+			et.SubElement(slat_a, 'PolyominoType').text = 'seed0_a'
+			et.SubElement(slat_a, 'translation').text = f'({i * 2}, 0, 0)'
 
-		slat_b = et.SubElement(seed_tiles, 'Polyomino')
-		et.SubElement(slat_b, 'PolyominoType').text = 'seed0_b'
-		et.SubElement(slat_b, 'translation').text = f'({(i * 2) + 1}, 0, 0)'
+			slat_b = et.SubElement(seed_tiles, 'Polyomino')
+			et.SubElement(slat_b, 'PolyominoType').text = 'seed0_b'
+			et.SubElement(slat_b, 'translation').text = f'({(i * 2) + 1}, 0, 0)'
 
 	et.ElementTree(sys_elem).write(output_file, pretty_print=True)
