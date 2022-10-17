@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# VS Code settings
+.vscode
+
 # Generated sets of crisscross slats
 slats/*.xml

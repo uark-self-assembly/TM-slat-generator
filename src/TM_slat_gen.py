@@ -80,7 +80,7 @@ if __name__ == '__main__':
 	print(f'Boundary slats:\t\t{len(bound_slats)}')
 	print(f'Symbol slats:\t\t{len(symbol_slats)}')
 	print(f'Seed row slats:\t\t{len(input_slats)}')
-	print(f'Seed staples:\t\t{len(assembly_input) + 5}')
+	print(f'Origami adapters:\t\t{len(assembly_input) + 5}')
 	print('============================')
 	print(f'Singly seeded total:\t{len(tile_set)}')
 	print(f'Origami total:\t\t{len(tile_set) - len(input_slats) + len(assembly_input) + 5}')
