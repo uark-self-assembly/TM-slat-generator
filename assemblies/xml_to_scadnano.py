@@ -10,13 +10,13 @@ from utils.slats import CrissCrossSlat, CrissCrossStaple
 #		 z=-1 (horizontal) slats actually make sense
 
 """
-TODO: Document
-
 sys_elem (PolyominoSystem) has 4 children:
 	[0] bindingThreshold
 	[1] PolyominoTypes
 	[2] seed
 	[3] assembly
+
+TODO: Document!
 """
 def GetPolyominoTypes(filename: str) -> list[Union[CrissCrossSlat, CrissCrossStaple]]:
 
@@ -31,9 +31,10 @@ def GetPolyominoTypes(filename: str) -> list[Union[CrissCrossSlat, CrissCrossSta
 	return slats
 
 """
-TODO: Document
 Can't set type of param: polyomino_type because ElementTree is unclear.
 param: polyomino type is an XML element whose children can be accessed via index.
+
+TODO: Document!
 """
 def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
 	
@@ -66,12 +67,18 @@ def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
 
 		coord_to_domain[coords[:2]] = domain
 
-	# Stores the domains of this slat in order
-	# domains = list()
-
 	# Check if this is a staple/"frontier tooth"
 	if (0, 8) in coord_to_domain and (1, 8) in coord_to_domain:
-		pass
+		domains = list()
+
+		# Two x-values (a left and a right side)
+		for x in range(2):
+			# TODO: Hard-coded values here are yucky
+			# Four y-values (5 through 8); decrement y coordinate due to how staples are stored
+			for y in range(8, 4, -1):
+				domains.append(coord_to_domain[(x, y)])
+
+		return CrissCrossStaple(name, domains)
 
 	# Check if this is a vertical slat
 	elif (0, 8) in coord_to_domain:
@@ -89,6 +96,7 @@ def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
 
 if __name__ == '__main__':
 
+	# TODO: Receive input regarding domain length
 	if len(sys.argv) != 2:
 		print('Please provide exactly one argument: filename.xml!')
 		exit()
