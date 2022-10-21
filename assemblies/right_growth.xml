@@ -6652,1098 +6652,6 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>W_EDGE_GROW_a</name>
-			<color>PINK</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_A</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_B</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_C</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_D</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_EDGE_a</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_EDGE_b</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_c</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_d</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_EDGE_GROW_b</name>
-			<color>PINK</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_W</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_X</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_Y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_Z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_EDGE_w</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_EDGE_x</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_EDGE_GROW_a_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_EDGE_GROW_b_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_EDGE_GROW_c_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(8, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(9, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(10, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(11, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_EDGE_GROW_d_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_EDGE_GROW_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(8, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(9, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(10, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(11, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_BLANK+_GROW_a</name>
-			<color>BLUE</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_A</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_B</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_C</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_D</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_a</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_b</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_c</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_d</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_BLANK+_GROW_b</name>
-			<color>BLUE</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_W</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_X</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_Y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_Z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_w</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_x</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_BLANK+_GROW_a_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(8, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(9, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(10, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(11, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_BLANK+_GROW_b_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(8, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(9, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(10, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(11, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_BLANK+_GROW_c_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>W_BLANK+_GROW_d_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-o_EDGE_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_BLANK+_GROW_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
 			<name>e_BLANK_a</name>
 			<color>BLUE</color>
 			<concentration>1.0</concentration>
@@ -12010,7 +10918,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_right,BLANK_a</name>
+			<name>o_right,BLANK+_a</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -12018,7 +10926,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_A</label>
+							<label>o_right,BLANK+_A</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12027,7 +10935,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_B</label>
+							<label>o_right,BLANK+_B</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12072,7 +10980,7 @@
 					<coords>(0, 2, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_c</label>
+							<label>o_right,BLANK+_c</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12081,7 +10989,7 @@
 					<coords>(0, 1, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_d</label>
+							<label>o_right,BLANK+_d</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12089,7 +10997,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_right,BLANK_b</name>
+			<name>o_right,BLANK+_b</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -12097,7 +11005,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_W</label>
+							<label>o_right,BLANK+_W</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12106,7 +11014,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_X</label>
+							<label>o_right,BLANK+_X</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12151,7 +11059,7 @@
 					<coords>(0, 2, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_y</label>
+							<label>o_right,BLANK+_y</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12160,7 +11068,7 @@
 					<coords>(0, 1, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_z</label>
+							<label>o_right,BLANK+_z</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -12168,7 +11076,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_right,BLANK_a_out</name>
+			<name>o_right,BLANK+_a_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -12176,7 +11084,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_A*</label>
+							<label>o_right,BLANK+_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12185,7 +11093,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_W*</label>
+							<label>o_right,BLANK+_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12194,7 +11102,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_A*</label>
+							<label>o_right,BLANK+_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12203,7 +11111,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_W*</label>
+							<label>o_right,BLANK+_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12247,7 +11155,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_right,BLANK_b_out</name>
+			<name>o_right,BLANK+_b_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -12255,7 +11163,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_B*</label>
+							<label>o_right,BLANK+_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12264,7 +11172,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_X*</label>
+							<label>o_right,BLANK+_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12273,7 +11181,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_B*</label>
+							<label>o_right,BLANK+_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12282,7 +11190,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_X*</label>
+							<label>o_right,BLANK+_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12326,7 +11234,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_right,BLANK_c_out</name>
+			<name>o_right,BLANK+_c_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -12334,7 +11242,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_c*</label>
+							<label>o_right,BLANK+_c*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12343,7 +11251,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_y*</label>
+							<label>o_right,BLANK+_y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12352,7 +11260,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_c*</label>
+							<label>o_right,BLANK+_c*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12361,7 +11269,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_y*</label>
+							<label>o_right,BLANK+_y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12405,7 +11313,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_right,BLANK_d_out</name>
+			<name>o_right,BLANK+_d_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -12413,7 +11321,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_d*</label>
+							<label>o_right,BLANK+_d*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12422,7 +11330,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_z*</label>
+							<label>o_right,BLANK+_z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12431,7 +11339,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_d*</label>
+							<label>o_right,BLANK+_d*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -12440,7 +11348,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_right,BLANK_z*</label>
+							<label>o_right,BLANK+_z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13432,7 +12340,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_right,BLANK+_a</name>
+			<name>e-grow_right,BLANK_a</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -13440,7 +12348,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_A</label>
+							<label>e-grow_right,BLANK_A</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13449,7 +12357,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_B</label>
+							<label>e-grow_right,BLANK_B</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13458,7 +12366,7 @@
 					<coords>(0, 6, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_C</label>
+							<label>e-grow_right,BLANK_C</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13467,7 +12375,7 @@
 					<coords>(0, 5, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_D</label>
+							<label>e-grow_right,BLANK_D</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13511,7 +12419,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_right,BLANK+_b</name>
+			<name>e-grow_right,BLANK_b</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -13519,7 +12427,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_W</label>
+							<label>e-grow_right,BLANK_W</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13528,7 +12436,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_X</label>
+							<label>e-grow_right,BLANK_X</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13537,7 +12445,7 @@
 					<coords>(0, 6, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_Y</label>
+							<label>e-grow_right,BLANK_Y</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13546,7 +12454,7 @@
 					<coords>(0, 5, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_Z</label>
+							<label>e-grow_right,BLANK_Z</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -13590,7 +12498,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_right,BLANK+_a_out</name>
+			<name>e-grow_right,BLANK_a_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -13598,7 +12506,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_A*</label>
+							<label>e-grow_right,BLANK_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13607,7 +12515,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_W*</label>
+							<label>e-grow_right,BLANK_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13616,7 +12524,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_A*</label>
+							<label>e-grow_right,BLANK_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13625,7 +12533,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_W*</label>
+							<label>e-grow_right,BLANK_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13669,7 +12577,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_right,BLANK+_b_out</name>
+			<name>e-grow_right,BLANK_b_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -13677,7 +12585,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_B*</label>
+							<label>e-grow_right,BLANK_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13686,7 +12594,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_X*</label>
+							<label>e-grow_right,BLANK_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13695,7 +12603,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_B*</label>
+							<label>e-grow_right,BLANK_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13704,7 +12612,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_X*</label>
+							<label>e-grow_right,BLANK_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13748,7 +12656,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_right,BLANK+_c_out</name>
+			<name>e-grow_right,BLANK_c_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -13792,7 +12700,7 @@
 					<coords>(4, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_C*</label>
+							<label>e-grow_right,BLANK_C*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13801,7 +12709,7 @@
 					<coords>(5, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_Y*</label>
+							<label>e-grow_right,BLANK_Y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13810,7 +12718,7 @@
 					<coords>(6, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_C*</label>
+							<label>e-grow_right,BLANK_C*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13819,7 +12727,7 @@
 					<coords>(7, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_Y*</label>
+							<label>e-grow_right,BLANK_Y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13827,7 +12735,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_right,BLANK+_d_out</name>
+			<name>e-grow_right,BLANK_d_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -13871,7 +12779,7 @@
 					<coords>(4, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_D*</label>
+							<label>e-grow_right,BLANK_D*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13880,7 +12788,7 @@
 					<coords>(5, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_Z*</label>
+							<label>e-grow_right,BLANK_Z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13889,7 +12797,7 @@
 					<coords>(6, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_D*</label>
+							<label>e-grow_right,BLANK_D*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -13898,7 +12806,7 @@
 					<coords>(7, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_right,BLANK+_Z*</label>
+							<label>e-grow_right,BLANK_Z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -16750,7 +15658,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_twice,BLANK_a</name>
+			<name>o_twice,BLANK+_a</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -16758,7 +15666,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_A</label>
+							<label>o_twice,BLANK+_A</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16767,7 +15675,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_B</label>
+							<label>o_twice,BLANK+_B</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16812,7 +15720,7 @@
 					<coords>(0, 2, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_c</label>
+							<label>o_twice,BLANK+_c</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16821,7 +15729,7 @@
 					<coords>(0, 1, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_d</label>
+							<label>o_twice,BLANK+_d</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16829,7 +15737,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_twice,BLANK_b</name>
+			<name>o_twice,BLANK+_b</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -16837,7 +15745,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_W</label>
+							<label>o_twice,BLANK+_W</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16846,7 +15754,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_X</label>
+							<label>o_twice,BLANK+_X</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16891,7 +15799,7 @@
 					<coords>(0, 2, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_y</label>
+							<label>o_twice,BLANK+_y</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16900,7 +15808,7 @@
 					<coords>(0, 1, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_z</label>
+							<label>o_twice,BLANK+_z</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -16908,7 +15816,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_twice,BLANK_a_out</name>
+			<name>o_twice,BLANK+_a_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -16916,7 +15824,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_A*</label>
+							<label>o_twice,BLANK+_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -16925,7 +15833,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_W*</label>
+							<label>o_twice,BLANK+_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -16934,7 +15842,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_A*</label>
+							<label>o_twice,BLANK+_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -16943,7 +15851,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_W*</label>
+							<label>o_twice,BLANK+_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -16987,7 +15895,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_twice,BLANK_b_out</name>
+			<name>o_twice,BLANK+_b_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -16995,7 +15903,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_B*</label>
+							<label>o_twice,BLANK+_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17004,7 +15912,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_X*</label>
+							<label>o_twice,BLANK+_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17013,7 +15921,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_B*</label>
+							<label>o_twice,BLANK+_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17022,7 +15930,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_X*</label>
+							<label>o_twice,BLANK+_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17066,7 +15974,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_twice,BLANK_c_out</name>
+			<name>o_twice,BLANK+_c_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -17074,7 +15982,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_c*</label>
+							<label>o_twice,BLANK+_c*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17083,7 +15991,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_y*</label>
+							<label>o_twice,BLANK+_y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17092,7 +16000,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_c*</label>
+							<label>o_twice,BLANK+_c*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17101,7 +16009,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_y*</label>
+							<label>o_twice,BLANK+_y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17145,7 +16053,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-grow_twice,BLANK_d_out</name>
+			<name>o_twice,BLANK+_d_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -17153,7 +16061,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_d*</label>
+							<label>o_twice,BLANK+_d*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17162,7 +16070,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_z*</label>
+							<label>o_twice,BLANK+_z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17171,7 +16079,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_d*</label>
+							<label>o_twice,BLANK+_d*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -17180,7 +16088,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o-grow_twice,BLANK_z*</label>
+							<label>o_twice,BLANK+_z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18172,7 +17080,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_twice,BLANK+_a</name>
+			<name>e-grow_twice,BLANK_a</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -18180,7 +17088,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_A</label>
+							<label>e-grow_twice,BLANK_A</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18189,7 +17097,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_B</label>
+							<label>e-grow_twice,BLANK_B</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18198,7 +17106,7 @@
 					<coords>(0, 6, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_C</label>
+							<label>e-grow_twice,BLANK_C</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18207,7 +17115,7 @@
 					<coords>(0, 5, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_D</label>
+							<label>e-grow_twice,BLANK_D</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18251,7 +17159,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_twice,BLANK+_b</name>
+			<name>e-grow_twice,BLANK_b</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -18259,7 +17167,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_W</label>
+							<label>e-grow_twice,BLANK_W</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18268,7 +17176,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_X</label>
+							<label>e-grow_twice,BLANK_X</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18277,7 +17185,7 @@
 					<coords>(0, 6, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_Y</label>
+							<label>e-grow_twice,BLANK_Y</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18286,7 +17194,7 @@
 					<coords>(0, 5, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_Z</label>
+							<label>e-grow_twice,BLANK_Z</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -18330,7 +17238,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_twice,BLANK+_a_out</name>
+			<name>e-grow_twice,BLANK_a_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -18338,7 +17246,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_A*</label>
+							<label>e-grow_twice,BLANK_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18347,7 +17255,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_W*</label>
+							<label>e-grow_twice,BLANK_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18356,7 +17264,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_A*</label>
+							<label>e-grow_twice,BLANK_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18365,7 +17273,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_W*</label>
+							<label>e-grow_twice,BLANK_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18409,7 +17317,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_twice,BLANK+_b_out</name>
+			<name>e-grow_twice,BLANK_b_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -18417,7 +17325,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_B*</label>
+							<label>e-grow_twice,BLANK_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18426,7 +17334,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_X*</label>
+							<label>e-grow_twice,BLANK_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18435,7 +17343,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_B*</label>
+							<label>e-grow_twice,BLANK_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18444,7 +17352,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_X*</label>
+							<label>e-grow_twice,BLANK_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18488,7 +17396,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_twice,BLANK+_c_out</name>
+			<name>e-grow_twice,BLANK_c_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -18532,7 +17440,7 @@
 					<coords>(4, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_C*</label>
+							<label>e-grow_twice,BLANK_C*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18541,7 +17449,7 @@
 					<coords>(5, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_Y*</label>
+							<label>e-grow_twice,BLANK_Y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18550,7 +17458,7 @@
 					<coords>(6, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_C*</label>
+							<label>e-grow_twice,BLANK_C*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18559,7 +17467,7 @@
 					<coords>(7, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_Y*</label>
+							<label>e-grow_twice,BLANK_Y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18567,7 +17475,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>e_twice,BLANK+_d_out</name>
+			<name>e-grow_twice,BLANK_d_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -18611,7 +17519,7 @@
 					<coords>(4, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_D*</label>
+							<label>e-grow_twice,BLANK_D*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18620,7 +17528,7 @@
 					<coords>(5, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_Z*</label>
+							<label>e-grow_twice,BLANK_Z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18629,7 +17537,7 @@
 					<coords>(6, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_D*</label>
+							<label>e-grow_twice,BLANK_D*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -18638,7 +17546,7 @@
 					<coords>(7, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>e_twice,BLANK+_Z*</label>
+							<label>e-grow_twice,BLANK_Z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -20542,480 +19450,6 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o-No-Op_thrice,0_a</name>
-			<color>RED</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_A</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_B</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_a</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_b</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_c</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_d</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,0_b</name>
-			<color>RED</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_W</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_X</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_w</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_x</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,0_a_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,0_b_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,0_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,0_c_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,0_d_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,0_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
 			<name>e_thrice,BLANK_a</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
@@ -21483,480 +19917,6 @@
 					<domains>
 						<domain>
 							<label>e_thrice,BLANK_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>e-grow_thrice,BLANK_a</name>
-			<color>RED</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_A</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_B</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_C</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_D</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_a</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_b</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice_c</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice_d</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>e-grow_thrice,BLANK_b</name>
-			<color>RED</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_W</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_X</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_Y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_Z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_w</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>W-e_BLANK+_x</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice_y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice_z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>e-grow_thrice,BLANK_a_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>e-grow_thrice,BLANK_b_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>e-grow_thrice,BLANK_c_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>e-grow_thrice,BLANK_d_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>W_GROW_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>e-grow_thrice,BLANK_Z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -22912,7 +20872,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o_thrice,BLANK+_a</name>
+			<name>o-grow_thrice,BLANK_a</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -22920,7 +20880,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_A</label>
+							<label>o-grow_thrice,BLANK_A</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -22929,7 +20889,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_B</label>
+							<label>o-grow_thrice,BLANK_B</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -22974,7 +20934,7 @@
 					<coords>(0, 2, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_c</label>
+							<label>o-grow_thrice,BLANK_c</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -22983,7 +20943,7 @@
 					<coords>(0, 1, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_d</label>
+							<label>o-grow_thrice,BLANK_d</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -22991,7 +20951,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o_thrice,BLANK+_b</name>
+			<name>o-grow_thrice,BLANK_b</name>
 			<color>RED</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -22999,7 +20959,7 @@
 					<coords>(0, 8, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_W</label>
+							<label>o-grow_thrice,BLANK_W</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -23008,7 +20968,7 @@
 					<coords>(0, 7, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_X</label>
+							<label>o-grow_thrice,BLANK_X</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -23053,7 +21013,7 @@
 					<coords>(0, 2, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_y</label>
+							<label>o-grow_thrice,BLANK_y</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -23062,7 +21022,7 @@
 					<coords>(0, 1, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_z</label>
+							<label>o-grow_thrice,BLANK_z</label>
 							<direction>D</direction>
 						</domain>
 					</domains>
@@ -23070,7 +21030,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o_thrice,BLANK+_a_out</name>
+			<name>o-grow_thrice,BLANK_a_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -23078,7 +21038,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_A*</label>
+							<label>o-grow_thrice,BLANK_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23087,7 +21047,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_W*</label>
+							<label>o-grow_thrice,BLANK_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23096,7 +21056,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_A*</label>
+							<label>o-grow_thrice,BLANK_A*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23105,7 +21065,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_W*</label>
+							<label>o-grow_thrice,BLANK_W*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23149,7 +21109,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o_thrice,BLANK+_b_out</name>
+			<name>o-grow_thrice,BLANK_b_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -23157,7 +21117,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_B*</label>
+							<label>o-grow_thrice,BLANK_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23166,7 +21126,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_X*</label>
+							<label>o-grow_thrice,BLANK_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23175,7 +21135,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_B*</label>
+							<label>o-grow_thrice,BLANK_B*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23184,7 +21144,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_X*</label>
+							<label>o-grow_thrice,BLANK_X*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23228,7 +21188,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o_thrice,BLANK+_c_out</name>
+			<name>o-grow_thrice,BLANK_c_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -23236,7 +21196,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_c*</label>
+							<label>o-grow_thrice,BLANK_c*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23245,7 +21205,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_y*</label>
+							<label>o-grow_thrice,BLANK_y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23254,7 +21214,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_c*</label>
+							<label>o-grow_thrice,BLANK_c*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23263,7 +21223,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_y*</label>
+							<label>o-grow_thrice,BLANK_y*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23343,7 +21303,7 @@
 			</blocks>
 		</PolyominoType>
 		<PolyominoType>
-			<name>o_thrice,BLANK+_d_out</name>
+			<name>o-grow_thrice,BLANK_d_out</name>
 			<color>GRAY</color>
 			<concentration>1.0</concentration>
 			<blocks>
@@ -23351,7 +21311,7 @@
 					<coords>(0, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_d*</label>
+							<label>o-grow_thrice,BLANK_d*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23360,7 +21320,7 @@
 					<coords>(1, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_z*</label>
+							<label>o-grow_thrice,BLANK_z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23369,7 +21329,7 @@
 					<coords>(2, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_d*</label>
+							<label>o-grow_thrice,BLANK_d*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23378,7 +21338,7 @@
 					<coords>(3, 0, 0)</coords>
 					<domains>
 						<domain>
-							<label>o_thrice,BLANK+_z*</label>
+							<label>o-grow_thrice,BLANK_z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23451,480 +21411,6 @@
 					<domains>
 						<domain>
 							<label>E-e_EDGE_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,BLANK_a</name>
-			<color>RED</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_A</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_B</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_a</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_b</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_c</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_d</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,BLANK_b</name>
-			<color>RED</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 8, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_W</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 7, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_X</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 6, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 5, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 4, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_w</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 3, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_x</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 2, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_y</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(0, 1, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_z</label>
-							<direction>D</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,BLANK_a_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_A*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_W*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_a*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_w*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,BLANK_b_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_B*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_X*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_b*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>thrice,BLANK_x*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,BLANK_c_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_c*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_C*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Y*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-			</blocks>
-		</PolyominoType>
-		<PolyominoType>
-			<name>o-No-Op_thrice,BLANK_d_out</name>
-			<color>GRAY</color>
-			<concentration>1.0</concentration>
-			<blocks>
-				<block>
-					<coords>(0, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(1, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(2, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_d*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(3, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>o-No-Op_thrice,BLANK_z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(4, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(5, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(6, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_D*</label>
-							<direction>U</direction>
-						</domain>
-					</domains>
-				</block>
-				<block>
-					<coords>(7, 0, 0)</coords>
-					<domains>
-						<domain>
-							<label>&gt;_Z*</label>
 							<direction>U</direction>
 						</domain>
 					</domains>
@@ -23955,6 +21441,10 @@
 				<translation>(-4, 8, -1)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>seed0_c_out</PolyominoType>
+				<translation>(-4, 6, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>seed0_d_out</PolyominoType>
 				<translation>(-4, 5, -1)</translation>
 			</Polyomino>
@@ -23963,8 +21453,12 @@
 				<translation>(-4, 7, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed0_c_out</PolyominoType>
-				<translation>(-4, 6, -1)</translation>
+				<PolyominoType>seed1_b</PolyominoType>
+				<translation>(-1, 4, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed1_a</PolyominoType>
+				<translation>(-4, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed1_a</PolyominoType>
@@ -23975,32 +21469,20 @@
 				<translation>(-3, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed1_a</PolyominoType>
-				<translation>(-4, 4, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed1_b</PolyominoType>
-				<translation>(-1, 4, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed1_d_out</PolyominoType>
-				<translation>(-8, 9, -1)</translation>
+				<PolyominoType>seed1_b_out</PolyominoType>
+				<translation>(-8, 11, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed1_a_out</PolyominoType>
 				<translation>(-8, 12, -1)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>seed1_d_out</PolyominoType>
+				<translation>(-8, 9, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>seed1_c_out</PolyominoType>
 				<translation>(-8, 10, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed1_b_out</PolyominoType>
-				<translation>(-8, 11, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed2_b</PolyominoType>
-				<translation>(-5, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed2_b</PolyominoType>
@@ -24008,35 +21490,39 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed2_a</PolyominoType>
-				<translation>(-6, 8, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed2_a</PolyominoType>
 				<translation>(-8, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed2_b_out</PolyominoType>
-				<translation>(-12, 15, -1)</translation>
+				<PolyominoType>seed2_a</PolyominoType>
+				<translation>(-6, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed2_c_out</PolyominoType>
-				<translation>(-12, 14, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed2_a_out</PolyominoType>
-				<translation>(-12, 16, -1)</translation>
+				<PolyominoType>seed2_b</PolyominoType>
+				<translation>(-5, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed2_d_out</PolyominoType>
 				<translation>(-12, 13, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed3_a</PolyominoType>
-				<translation>(-10, 12, 0)</translation>
+				<PolyominoType>seed2_a_out</PolyominoType>
+				<translation>(-12, 16, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed2_c_out</PolyominoType>
+				<translation>(-12, 14, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed2_b_out</PolyominoType>
+				<translation>(-12, 15, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_b</PolyominoType>
-				<translation>(-9, 12, 0)</translation>
+				<translation>(-11, 12, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed3_a</PolyominoType>
+				<translation>(-10, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_a</PolyominoType>
@@ -24044,23 +21530,23 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_b</PolyominoType>
-				<translation>(-11, 12, 0)</translation>
+				<translation>(-9, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_d_out</PolyominoType>
 				<translation>(-16, 17, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed3_c_out</PolyominoType>
-				<translation>(-16, 18, -1)</translation>
+				<PolyominoType>seed3_b_out</PolyominoType>
+				<translation>(-16, 19, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_a_out</PolyominoType>
 				<translation>(-16, 20, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed3_b_out</PolyominoType>
-				<translation>(-16, 19, -1)</translation>
+				<PolyominoType>seed3_c_out</PolyominoType>
+				<translation>(-16, 18, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-e_EDGE_b</PolyominoType>
@@ -24072,27 +21558,35 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-e_EDGE_a</PolyominoType>
-				<translation>(-16, 16, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-e_EDGE_a</PolyominoType>
 				<translation>(-14, 16, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-e_EDGE_a_out</PolyominoType>
-				<translation>(-16, 24, -1)</translation>
+				<PolyominoType>W-e_EDGE_a</PolyominoType>
+				<translation>(-16, 16, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-e_EDGE_b_out</PolyominoType>
 				<translation>(-16, 23, -1)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>W-e_EDGE_d_out</PolyominoType>
+				<translation>(-16, 21, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>W-e_EDGE_c_out</PolyominoType>
 				<translation>(-16, 22, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-e_EDGE_d_out</PolyominoType>
-				<translation>(-16, 21, -1)</translation>
+				<PolyominoType>W-e_EDGE_a_out</PolyominoType>
+				<translation>(-16, 24, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>W-o_BLANK+_b</PolyominoType>
+				<translation>(-5, 16, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>W-o_EDGE_b</PolyominoType>
+				<translation>(-11, 20, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_b</PolyominoType>
@@ -24101,14 +21595,6 @@
 			<Polyomino>
 				<PolyominoType>W-o_EDGE_a</PolyominoType>
 				<translation>(-12, 20, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_EDGE_b</PolyominoType>
-				<translation>(-11, 20, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_BLANK+_b</PolyominoType>
-				<translation>(-5, 16, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_a</PolyominoType>
@@ -24123,44 +21609,44 @@
 				<translation>(-10, 20, 0)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>W-o_EDGE_b_out</PolyominoType>
+				<translation>(-12, 27, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>W-o_BLANK+_a</PolyominoType>
 				<translation>(-8, 16, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_BLANK+_a_out</PolyominoType>
-				<translation>(-8, 24, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_EDGE_a_out</PolyominoType>
-				<translation>(-12, 28, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_b_out</PolyominoType>
 				<translation>(-8, 23, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-o_EDGE_b_out</PolyominoType>
-				<translation>(-12, 27, -1)</translation>
+				<PolyominoType>W-o_BLANK+_c_out</PolyominoType>
+				<translation>(-8, 18, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>W-o_EDGE_a_out</PolyominoType>
+				<translation>(-12, 28, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_d_out</PolyominoType>
 				<translation>(-8, 17, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-o_BLANK+_c_out</PolyominoType>
-				<translation>(-8, 18, -1)</translation>
+				<PolyominoType>o-trans_right,0_a</PolyominoType>
+				<translation>(-2, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_b</PolyominoType>
 				<translation>(-3, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-trans_right,0_a</PolyominoType>
-				<translation>(-4, 12, 0)</translation>
+				<PolyominoType>W-o_BLANK+_a_out</PolyominoType>
+				<translation>(-8, 24, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_a</PolyominoType>
-				<translation>(-2, 12, 0)</translation>
+				<translation>(-4, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_b</PolyominoType>
@@ -24175,52 +21661,44 @@
 				<translation>(-4, 14, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-trans_right,0_a_out</PolyominoType>
-				<translation>(-4, 20, -1)</translation>
+				<PolyominoType>o_twice,BLANK+_a</PolyominoType>
+				<translation>(0, 8, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>o_twice,BLANK+_a</PolyominoType>
+				<translation>(2, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_b_out</PolyominoType>
 				<translation>(-4, 19, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_a</PolyominoType>
-				<translation>(0, 8, 0)</translation>
+				<PolyominoType>o-trans_right,0_a_out</PolyominoType>
+				<translation>(-4, 20, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_b</PolyominoType>
-				<translation>(1, 8, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_a</PolyominoType>
-				<translation>(2, 8, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_b</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_b</PolyominoType>
 				<translation>(3, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_b_out</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_b</PolyominoType>
+				<translation>(1, 8, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>o_twice,BLANK+_b_out</PolyominoType>
 				<translation>(0, 15, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_c_out</PolyominoType>
-				<translation>(0, 10, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_a_out</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_a_out</PolyominoType>
 				<translation>(0, 16, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_d_out</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_c_out</PolyominoType>
+				<translation>(0, 10, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>o_twice,BLANK+_d_out</PolyominoType>
 				<translation>(0, 9, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_a</PolyominoType>
-				<translation>(4, 4, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_b</PolyominoType>
-				<translation>(5, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_a</PolyominoType>
@@ -24228,19 +21706,19 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_b</PolyominoType>
+				<translation>(5, 4, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_EDGE_GROW_b</PolyominoType>
 				<translation>(7, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_a_out</PolyominoType>
-				<translation>(4, 12, -1)</translation>
+				<PolyominoType>E_EDGE_GROW_a</PolyominoType>
+				<translation>(4, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_c_out</PolyominoType>
 				<translation>(4, 6, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_b_out</PolyominoType>
-				<translation>(4, 11, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_d_out</PolyominoType>
@@ -24248,11 +21726,23 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_STAPLE</PolyominoType>
-				<translation>(8, 0, 0)</translation>
+				<translation>(10, 0, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_EDGE_GROW_a_out</PolyominoType>
+				<translation>(4, 12, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_EDGE_GROW_b_out</PolyominoType>
+				<translation>(4, 11, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_STAPLE</PolyominoType>
-				<translation>(10, 0, 0)</translation>
+				<translation>(8, 0, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_STAPLE_b_out</PolyominoType>
+				<translation>(8, 7, -1)</translation>
 			</Polyomino>
 		</Polyominoes>
 	</seed>
@@ -24279,6 +21769,10 @@
 				<translation>(-4, 8, -1)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>seed0_c_out</PolyominoType>
+				<translation>(-4, 6, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>seed0_d_out</PolyominoType>
 				<translation>(-4, 5, -1)</translation>
 			</Polyomino>
@@ -24287,8 +21781,12 @@
 				<translation>(-4, 7, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed0_c_out</PolyominoType>
-				<translation>(-4, 6, -1)</translation>
+				<PolyominoType>seed1_b</PolyominoType>
+				<translation>(-1, 4, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed1_a</PolyominoType>
+				<translation>(-4, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed1_a</PolyominoType>
@@ -24299,32 +21797,20 @@
 				<translation>(-3, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed1_a</PolyominoType>
-				<translation>(-4, 4, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed1_b</PolyominoType>
-				<translation>(-1, 4, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed1_d_out</PolyominoType>
-				<translation>(-8, 9, -1)</translation>
+				<PolyominoType>seed1_b_out</PolyominoType>
+				<translation>(-8, 11, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed1_a_out</PolyominoType>
 				<translation>(-8, 12, -1)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>seed1_d_out</PolyominoType>
+				<translation>(-8, 9, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>seed1_c_out</PolyominoType>
 				<translation>(-8, 10, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed1_b_out</PolyominoType>
-				<translation>(-8, 11, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed2_b</PolyominoType>
-				<translation>(-5, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed2_b</PolyominoType>
@@ -24332,35 +21818,39 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed2_a</PolyominoType>
-				<translation>(-6, 8, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed2_a</PolyominoType>
 				<translation>(-8, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed2_b_out</PolyominoType>
-				<translation>(-12, 15, -1)</translation>
+				<PolyominoType>seed2_a</PolyominoType>
+				<translation>(-6, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed2_c_out</PolyominoType>
-				<translation>(-12, 14, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>seed2_a_out</PolyominoType>
-				<translation>(-12, 16, -1)</translation>
+				<PolyominoType>seed2_b</PolyominoType>
+				<translation>(-5, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed2_d_out</PolyominoType>
 				<translation>(-12, 13, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed3_a</PolyominoType>
-				<translation>(-10, 12, 0)</translation>
+				<PolyominoType>seed2_a_out</PolyominoType>
+				<translation>(-12, 16, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed2_c_out</PolyominoType>
+				<translation>(-12, 14, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed2_b_out</PolyominoType>
+				<translation>(-12, 15, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_b</PolyominoType>
-				<translation>(-9, 12, 0)</translation>
+				<translation>(-11, 12, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>seed3_a</PolyominoType>
+				<translation>(-10, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_a</PolyominoType>
@@ -24368,23 +21858,23 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_b</PolyominoType>
-				<translation>(-11, 12, 0)</translation>
+				<translation>(-9, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_d_out</PolyominoType>
 				<translation>(-16, 17, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed3_c_out</PolyominoType>
-				<translation>(-16, 18, -1)</translation>
+				<PolyominoType>seed3_b_out</PolyominoType>
+				<translation>(-16, 19, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>seed3_a_out</PolyominoType>
 				<translation>(-16, 20, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>seed3_b_out</PolyominoType>
-				<translation>(-16, 19, -1)</translation>
+				<PolyominoType>seed3_c_out</PolyominoType>
+				<translation>(-16, 18, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-e_EDGE_b</PolyominoType>
@@ -24396,27 +21886,35 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-e_EDGE_a</PolyominoType>
-				<translation>(-16, 16, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-e_EDGE_a</PolyominoType>
 				<translation>(-14, 16, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-e_EDGE_a_out</PolyominoType>
-				<translation>(-16, 24, -1)</translation>
+				<PolyominoType>W-e_EDGE_a</PolyominoType>
+				<translation>(-16, 16, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-e_EDGE_b_out</PolyominoType>
 				<translation>(-16, 23, -1)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>W-e_EDGE_d_out</PolyominoType>
+				<translation>(-16, 21, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>W-e_EDGE_c_out</PolyominoType>
 				<translation>(-16, 22, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-e_EDGE_d_out</PolyominoType>
-				<translation>(-16, 21, -1)</translation>
+				<PolyominoType>W-e_EDGE_a_out</PolyominoType>
+				<translation>(-16, 24, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>W-o_BLANK+_b</PolyominoType>
+				<translation>(-5, 16, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>W-o_EDGE_b</PolyominoType>
+				<translation>(-11, 20, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_b</PolyominoType>
@@ -24425,14 +21923,6 @@
 			<Polyomino>
 				<PolyominoType>W-o_EDGE_a</PolyominoType>
 				<translation>(-12, 20, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_EDGE_b</PolyominoType>
-				<translation>(-11, 20, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_BLANK+_b</PolyominoType>
-				<translation>(-5, 16, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_a</PolyominoType>
@@ -24447,44 +21937,44 @@
 				<translation>(-10, 20, 0)</translation>
 			</Polyomino>
 			<Polyomino>
+				<PolyominoType>W-o_EDGE_b_out</PolyominoType>
+				<translation>(-12, 27, -1)</translation>
+			</Polyomino>
+			<Polyomino>
 				<PolyominoType>W-o_BLANK+_a</PolyominoType>
 				<translation>(-8, 16, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_BLANK+_a_out</PolyominoType>
-				<translation>(-8, 24, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>W-o_EDGE_a_out</PolyominoType>
-				<translation>(-12, 28, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_b_out</PolyominoType>
 				<translation>(-8, 23, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-o_EDGE_b_out</PolyominoType>
-				<translation>(-12, 27, -1)</translation>
+				<PolyominoType>W-o_BLANK+_c_out</PolyominoType>
+				<translation>(-8, 18, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>W-o_EDGE_a_out</PolyominoType>
+				<translation>(-12, 28, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>W-o_BLANK+_d_out</PolyominoType>
 				<translation>(-8, 17, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>W-o_BLANK+_c_out</PolyominoType>
-				<translation>(-8, 18, -1)</translation>
+				<PolyominoType>o-trans_right,0_a</PolyominoType>
+				<translation>(-2, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_b</PolyominoType>
 				<translation>(-3, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-trans_right,0_a</PolyominoType>
-				<translation>(-4, 12, 0)</translation>
+				<PolyominoType>W-o_BLANK+_a_out</PolyominoType>
+				<translation>(-8, 24, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_a</PolyominoType>
-				<translation>(-2, 12, 0)</translation>
+				<translation>(-4, 12, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_b</PolyominoType>
@@ -24499,52 +21989,44 @@
 				<translation>(-4, 14, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-trans_right,0_a_out</PolyominoType>
-				<translation>(-4, 20, -1)</translation>
+				<PolyominoType>o_twice,BLANK+_a</PolyominoType>
+				<translation>(0, 8, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>o_twice,BLANK+_a</PolyominoType>
+				<translation>(2, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>o-trans_right,0_b_out</PolyominoType>
 				<translation>(-4, 19, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_a</PolyominoType>
-				<translation>(0, 8, 0)</translation>
+				<PolyominoType>o-trans_right,0_a_out</PolyominoType>
+				<translation>(-4, 20, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_b</PolyominoType>
-				<translation>(1, 8, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_a</PolyominoType>
-				<translation>(2, 8, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_b</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_b</PolyominoType>
 				<translation>(3, 8, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_b_out</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_b</PolyominoType>
+				<translation>(1, 8, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>o_twice,BLANK+_b_out</PolyominoType>
 				<translation>(0, 15, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_c_out</PolyominoType>
-				<translation>(0, 10, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_a_out</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_a_out</PolyominoType>
 				<translation>(0, 16, -1)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>o-grow_twice,BLANK_d_out</PolyominoType>
+				<PolyominoType>o_twice,BLANK+_c_out</PolyominoType>
+				<translation>(0, 10, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>o_twice,BLANK+_d_out</PolyominoType>
 				<translation>(0, 9, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_a</PolyominoType>
-				<translation>(4, 4, 0)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_b</PolyominoType>
-				<translation>(5, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_a</PolyominoType>
@@ -24552,19 +22034,19 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_b</PolyominoType>
+				<translation>(5, 4, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_EDGE_GROW_b</PolyominoType>
 				<translation>(7, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_a_out</PolyominoType>
-				<translation>(4, 12, -1)</translation>
+				<PolyominoType>E_EDGE_GROW_a</PolyominoType>
+				<translation>(4, 4, 0)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_c_out</PolyominoType>
 				<translation>(4, 6, -1)</translation>
-			</Polyomino>
-			<Polyomino>
-				<PolyominoType>E_EDGE_GROW_b_out</PolyominoType>
-				<translation>(4, 11, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_EDGE_GROW_d_out</PolyominoType>
@@ -24572,11 +22054,23 @@
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_STAPLE</PolyominoType>
-				<translation>(8, 0, 0)</translation>
+				<translation>(10, 0, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_EDGE_GROW_a_out</PolyominoType>
+				<translation>(4, 12, -1)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_EDGE_GROW_b_out</PolyominoType>
+				<translation>(4, 11, -1)</translation>
 			</Polyomino>
 			<Polyomino>
 				<PolyominoType>E_STAPLE</PolyominoType>
-				<translation>(10, 0, 0)</translation>
+				<translation>(8, 0, 0)</translation>
+			</Polyomino>
+			<Polyomino>
+				<PolyominoType>E_STAPLE_b_out</PolyominoType>
+				<translation>(8, 7, -1)</translation>
 			</Polyomino>
 		</Polyominoes>
 	</assembly>
