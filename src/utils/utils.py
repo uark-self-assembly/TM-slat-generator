@@ -67,23 +67,24 @@ def TilesetToXML(
 		
 		if(slat.orientation == 'N'):
 
-			for i in range(len(slat)):
+			for y in range(len(slat)):
 
 				block = et.SubElement(blocks, 'block')
 
 				x = 0
-				y = len(slat) - i
 
-				if type(slat) is CrissCrossStaple and i >= len(slat) // 2:
+				# If polyomino is a frontier tooth/staple and we have already iterated over the left half
+				if type(slat) is CrissCrossStaple and y >= len(slat) // 2:
 					x = 1
-					y += len(slat) // 2
+					y -= len(slat) // 2
 
 				et.SubElement(block, 'coords').text = f'({x}, {y}, 0)'
 
-				if slat[i]:
+				domain_index = len(slat) - y - 1
+				if slat[domain_index]:
 					domains = et.SubElement(block, 'domains')
 					domain = et.SubElement(domains, 'domain')
-					et.SubElement(domain, 'label').text = slat[i]
+					et.SubElement(domain, 'label').text = slat[domain_index]
 					et.SubElement(domain, 'direction').text = 'D'
 					et.SubElement(domain, 'strength').text = '1'
 
