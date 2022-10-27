@@ -28,7 +28,7 @@ def GetPolyominoTypes(filename: str) -> dict[str, Union[CrissCrossSlat, CrissCro
 	for poly_type in polyomino_types:
 		
 		# Note: If a name is duplicated, this will overwrite a polyomino with another
-		slat = BuildSlat(poly_type)
+		slat = BuildSlatType(poly_type)
 		name_to_slat[slat.name] = slat
 
 	return name_to_slat
@@ -37,7 +37,7 @@ def GetPolyominoTypes(filename: str) -> dict[str, Union[CrissCrossSlat, CrissCro
 TODO: Document!
 TODO: Set polyomino_type type and handle None data.
 """
-def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
+def BuildSlatType(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
 	"""
 	:param polyomino_type: An XML element whose children can be accessed via index.
 	"""
@@ -99,33 +99,33 @@ def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
 
 		return CrissCrossSlat(name, 'E', domains)
 
-"""
-TODO: Document!
-"""
-def BuildScadnanoSystem(
-	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]],
-	input_file: str
-) -> sc.Design:
+def LocateSlat(
+	polyomino: ET._Element,
+	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]]
+) -> Union[
+	tuple[Union[CrissCrossSlat, CrissCrossStaple], int, int, int],
+	None
+]:
+	"""
+	:param polyomino: XML element containing slat name (type) and location in assembly.
+	Returns (Polyomino (slat/staple), x, y, z) or None if information is missing in XML element.
+	"""
+	name = polyomino[0].text
+	str_translation = polyomino[1].text
 
-	# Access to <Polyominoes> (the child of <assembly>, which is a child of <PolyominoSystem>)
-	xml_polyominoes = ET.parse(input_file).getroot()[3][0]
-
-	# Get necessary parameters for creating the scadnano system
-	min_row, max_row, min_offset, max_offset = GetSystemBounds(slats, xml_polyominoes)
+	if name is None or str_translation is None:
+		return
 	
-	# TODO: Create "helices"
-		# How many? Need to read assembly to find out...
+	translation: tuple[int, int, int] = make_tuple(str_translation)
 
-	# TODO: Place slats one-by-one
-
-	# TODO: Insertions
+	return slats[name], translation[0], translation[1], translation[2]
 
 """
 TODO: Handle polyominoes that can rotate or have negative coords in structure definition.
 """
 def GetSystemBounds(
-	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]],
-	xml_polyominoes: ET._Element
+	xml_polyominoes: ET._Element,
+	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]]
 ) -> tuple[int, int, int, int]:
 	"""
 	:param slats: A dictionary mapping string names to slat types.
@@ -141,16 +141,14 @@ def GetSystemBounds(
 	
 	# Iterate over all polyominoes in the saved assembly
 	for polyomino in xml_polyominoes:
-		
-		if (polyomino[0].text is None or polyomino[1].text is None):
-			continue
-		
+
 		# Get slat type and location in assembly
-		name: str = polyomino[0].text
-		translation: tuple[int, int, int] = make_tuple(polyomino[1].text)
-		x = translation[0]
-		y = translation[1]
-		slat = slats[name]
+		slat_data = LocateSlat(polyomino, slats)
+		if slat_data is None:
+			continue
+		slat = slat_data[0]
+		x = slat_data[1]
+		y = slat_data[2]
 
 		# == Frontier tooth/staple == #
 		if slat is CrissCrossStaple:
@@ -206,6 +204,40 @@ def GetSystemBounds(
 
 	return min_row, max_row, min_column * DOMAIN_LENGTH, (max_column + 1) * DOMAIN_LENGTH
 
+"""
+TODO: Document!
+"""
+def AddStrands(design: sc.Design, xml_polyominoes: ET._Element) -> None:
+
+	for polyomino in xml_polyominoes:
+
+		pass
+
+"""
+TODO: Document!
+"""
+def BuildScadnanoDesign(
+	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]],
+	input_file: str
+) -> sc.Design:
+
+	# Access to <Polyominoes> (the child of <assembly>, which is a child of <PolyominoSystem>)
+	xml_polyominoes = ET.parse(input_file).getroot()[3][0]
+
+	# Get necessary parameters for creating the scadnano system
+	min_row, max_row, min_offset, max_offset = GetSystemBounds(xml_polyominoes, slats)
+	num_helices = max_row - min_row
+
+	# Instantiate blank design
+	helices = [sc.Helix(max_offset, min_offset) for _ in range(num_helices)]
+	design = sc.Design(helices=helices, grid=sc.square)
+	
+	AddStrands(design, xml_polyominoes)
+
+	# TODO: Add insertions
+
+	return design
+
 if __name__ == '__main__':
 
 	# TODO: Receive input regarding domain length
@@ -219,7 +251,6 @@ if __name__ == '__main__':
 	# Get slat types from XML file
 	slats = GetPolyominoTypes(input_file)
 
-	# Create scadnano file from assembly
-	# system = BuildScadnanoSystem(slats, input_file)
-
-	# TODO: Write system to file
+	# Create scadnano design from assembly and save to file
+	design = BuildScadnanoDesign(slats, input_file)
+	design.write_scadnano_file()
