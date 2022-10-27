@@ -8,9 +8,7 @@ from utils.slats import CrissCrossSlat, CrissCrossStaple
 
 # System constants
 # TODO: Take user input
-EIGHT_DOMAIN_OFFSET = 40
-TWELVE_DOMAIN_OFFSET = int(EIGHT_DOMAIN_OFFSET * 1.5)
-FOUR_DOMAIN_OFFSET = EIGHT_DOMAIN_OFFSET // 2
+DOMAIN_LENGTH = 5
 
 """
 sys_elem (PolyominoSystem) has 4 children:
@@ -24,7 +22,7 @@ TODO: Document!
 def GetPolyominoTypes(filename: str) -> dict[str, Union[CrissCrossSlat, CrissCrossStaple]]:
 
 	name_to_slat: dict[str, Union[CrissCrossSlat, CrissCrossStaple]] = dict()
-	xml_tree = ET.parse(filename, None)
+	xml_tree = ET.parse(filename)
 	polyomino_types = xml_tree.getroot()[1]
 
 	for poly_type in polyomino_types:
@@ -36,12 +34,13 @@ def GetPolyominoTypes(filename: str) -> dict[str, Union[CrissCrossSlat, CrissCro
 	return name_to_slat
 
 """
-Can't set type of param: polyomino_type because ElementTree is unclear.
-param: polyomino type is an XML element whose children can be accessed via index.
-
 TODO: Document!
+TODO: Set polyomino_type type and handle None data.
 """
 def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
+	"""
+	:param polyomino_type: An XML element whose children can be accessed via index.
+	"""
 	
 	# Name of the polyomino type
 	name: str = polyomino_type[0].text
@@ -80,8 +79,8 @@ def BuildSlat(polyomino_type) -> Union[CrissCrossSlat, CrissCrossStaple]:
 		# Two x-values (a left and a right side)
 		for x in range(2):
 			# TODO: Hard-coded values here are yucky
-			# Four y-values (5 through 8); decrement y coordinate due to how staples are stored
-			for y in range(8, 4, -1):
+			# Four y-values (3 through 0); decrement y coordinate due to how staples are stored
+			for y in range(3, -1, -1):
 				domains.append(coord_to_domain[(x, y)])
 
 		return CrissCrossStaple(name, domains)
@@ -109,8 +108,10 @@ def BuildScadnanoSystem(
 ) -> sc.Design:
 
 	# Access to <Polyominoes> (the child of <assembly>, which is a child of <PolyominoSystem>)
-	xml_polyominoes = ET.parse(input_file, None).getroot()[3][0]
-	# num_helices, max_offset = GetSystemBounds(slats, xml_polyominoes)
+	xml_polyominoes = ET.parse(input_file).getroot()[3][0]
+
+	# Get necessary parameters for creating the scadnano system
+	min_row, max_row, min_offset, max_offset = GetSystemBounds(slats, xml_polyominoes)
 	
 	# TODO: Create "helices"
 		# How many? Need to read assembly to find out...
@@ -120,30 +121,90 @@ def BuildScadnanoSystem(
 	# TODO: Insertions
 
 """
-Returns the number of helices and max offset needed for the scadnano system.
+TODO: Handle polyominoes that can rotate or have negative coords in structure definition.
 """
 def GetSystemBounds(
 	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]],
-	xml_polyominoes
-) -> tuple[int, int]:
+	xml_polyominoes: ET._Element
+) -> tuple[int, int, int, int]:
+	"""
+	:param slats: A dictionary mapping string names to slat types.
+	:param xml_polyominoes: XML element <Polyominoes>, the sole child of <assembly>.
 
-	num_helices: int = 0	# Number of "rows" in scadnano system
-	max_offset: int = 0		# Maximum distance on the x-axis in scadnano system
+	Returns (min_row, max_row, min_offset, max_offset).
+	"""
 	
+	min_row: int = 0	# Smallest row index (according to abstract assembly)
+	max_row: int = 0	# Largest row index (according to abstract assembly)
+	min_column: int = 0	# Smallest "column" index (according to abstract assembly)
+	max_column: int = 0	# Largest "column" index (according to abstract assembly)
+	
+	# Iterate over all polyominoes in the saved assembly
 	for polyomino in xml_polyominoes:
 		
-		# The what (polyomino type) and the where (translation)
+		if (polyomino[0].text is None or polyomino[1].text is None):
+			continue
+		
+		# Get slat type and location in assembly
 		name: str = polyomino[0].text
 		translation: tuple[int, int, int] = make_tuple(polyomino[1].text)
-
+		x = translation[0]
+		y = translation[1]
 		slat = slats[name]
-		# Vertical slat or frontier tooth/staple
-		if (slat.orientation == 'N'):
-			# if (num_helices)	TODO: Left off here
-			pass
-		# Horizontal slat
+
+		# == Frontier tooth/staple == #
+		if slat is CrissCrossStaple:
+			# Update number of helices (design's vertical dimension)
+			end_row = y + (len(slat) // 2) - 1
+			if end_row > max_row:
+				max_row = end_row
+			# Not mutually exclusive conditions
+			if y < min_row:
+				min_row = y
+
+			# Update length of helices (design's horizontal dimension)
+			end_column = x + 1
+			if end_column > max_column:
+				max_column = end_column
+			# Mutually exclusive conditions
+			elif x < min_column:
+				min_column = x
+
+		# == Vertical slat == #
+		elif slat.orientation == 'N':
+			# Update number of helices (design's vertical dimension)
+			end_row = y + len(slat) - 1
+			if end_row > max_row:
+				max_row = end_row
+			# Not mutually exclusive conditions
+			if y < min_row:
+				min_row = y
+
+			# Update length of helices (design's horizontal dimension)
+			if x > max_column:
+				max_column = x
+			# Mutually exclusive conditions
+			elif x < min_column:
+				min_column = x
+
+		# == Horizontal slat == #
 		else:
-			pass
+			# Update number of helices (design's vertical dimension)
+			if y > max_row:
+				max_row = y
+			# Mutually exclusive conditions
+			elif y < min_row:
+				min_row = y
+
+			# Update length of helices (design's horizontal dimension)
+			end_column = x + len(slat) - 1
+			if end_column > max_column:
+				max_column = end_column
+			# Not mutually exclusive conditions
+			if x < min_column:
+				min_column = x
+
+	return min_row, max_row, min_column * DOMAIN_LENGTH, (max_column + 1) * DOMAIN_LENGTH
 
 if __name__ == '__main__':
 
@@ -159,4 +220,6 @@ if __name__ == '__main__':
 	slats = GetPolyominoTypes(input_file)
 
 	# Create scadnano file from assembly
-	BuildScadnanoSystem(slats, input_file)
+	# system = BuildScadnanoSystem(slats, input_file)
+
+	# TODO: Write system to file
