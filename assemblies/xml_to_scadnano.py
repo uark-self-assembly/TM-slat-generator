@@ -142,7 +142,7 @@ def GetSystemBounds(
 	# Iterate over all polyominoes in the saved assembly
 	for polyomino in xml_polyominoes:
 
-		# Get slat type and location in assembly
+		# Get slat type and location in the assembly
 		slat_data = LocateSlat(polyomino, slats)
 		if slat_data is None:
 			continue
@@ -202,16 +202,36 @@ def GetSystemBounds(
 			if x < min_column:
 				min_column = x
 
-	return min_row, max_row, min_column * DOMAIN_LENGTH, (max_column + 1) * DOMAIN_LENGTH
+	return min_row, max_row + 1, min_column * DOMAIN_LENGTH, (max_column + 1) * DOMAIN_LENGTH
 
 """
 TODO: Document!
 """
-def AddStrands(design: sc.Design, xml_polyominoes: ET._Element) -> None:
+def AddStrands(design: sc.Design, xml_polyominoes: ET._Element, num_helices: int) -> None:
 
 	for polyomino in xml_polyominoes:
 
-		pass
+		# Get slat type and location in the assembly
+		slat_data = LocateSlat(polyomino, slats)
+		if slat_data is None:
+			continue
+		slat = slat_data[0]
+		x = slat_data[1]
+		y = slat_data[2]
+		z = slat_data[3]
+
+		# (Odd row and z=0 slat) OR (even row and z=-1 slat)
+		if (y % 2) ^ bool(z):
+			# 5' to 3' goes left
+			# TODO
+			pass
+		# (Even row and z=0 slat) OR (odd row and z=-1 slat)
+		else:
+			# 5' to 3' goes right
+			# TODO: Frontier teeth currently only span one column at bottom
+			num_columns = len(slat) if z else 1
+			design.draw_strand(num_helices - y - 1, x * DOMAIN_LENGTH)\
+				.move(num_columns * DOMAIN_LENGTH)
 
 """
 TODO: Document!
@@ -232,7 +252,7 @@ def BuildScadnanoDesign(
 	helices = [sc.Helix(max_offset, min_offset) for _ in range(num_helices)]
 	design = sc.Design(helices=helices, grid=sc.square)
 	
-	AddStrands(design, xml_polyominoes)
+	AddStrands(design, xml_polyominoes, num_helices)
 
 	# TODO: Add insertions
 
