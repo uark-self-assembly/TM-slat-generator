@@ -220,18 +220,100 @@ def AddStrands(design: sc.Design, xml_polyominoes: ET._Element, num_helices: int
 		y = slat_data[2]
 		z = slat_data[3]
 
-		# (Odd row and z=0 slat) OR (even row and z=-1 slat)
-		if (y % 2) ^ bool(z):
-			# 5' to 3' goes left
-			# TODO
-			pass
-		# (Even row and z=0 slat) OR (odd row and z=-1 slat)
+		# Frontier tooth
+		if type(slat) is CrissCrossStaple:
+			AddFrontierTooth(design, num_helices - y - 1, x * DOMAIN_LENGTH, len(slat) // 2)
+		# Vertical slat
+		elif slat.orientation == 'N':
+			AddVerticalSlat(design, num_helices - y - 1, x * DOMAIN_LENGTH)
+		# Horizontal slat
 		else:
-			# 5' to 3' goes right
-			# TODO: Frontier teeth currently only span one column at bottom
-			num_columns = len(slat) if z else 1
-			design.draw_strand(num_helices - y - 1, x * DOMAIN_LENGTH)\
-				.move(num_columns * DOMAIN_LENGTH)
+			AddHorizontalSlat(design, num_helices - y - 1, x * DOMAIN_LENGTH, len(slat))
+
+def AddFrontierTooth(
+	design: sc.Design,
+	start_helix: int,
+	offset: int,
+	height: int = 4
+) -> None:
+	""" Add a frontier tooth/staple to the design.
+
+	Add a frontier tooth/staple to :param design:, the bottom of which starts at
+	:param start_helix:. :param offset: determines the leftmost offset the frontier
+	tooth occupies. :param height: determines how many rows it will occupy.
+
+	Will not check if this is a valid placement, so it can trigger a scadnano.StrandError if
+	used incorrectly!
+
+	TODO: Not yet implemented!
+	"""
+
+	pass
+
+def AddHorizontalSlat(
+	design: sc.Design,
+	helix: int,
+	offset: int,
+	length: int = 8
+) -> None:
+	""" Add a horizontal slat to the design.
+
+	Add a horizontal slat to :param design: at :param helix: with leftmost offset of
+	:param offset:. :param length: determines how far (in the x direction) the strand
+	should span.
+
+	Will not check if this is a valid placement, so it can trigger a scadnano.StrandError if
+	used incorrectly!
+	"""
+
+	width_vector = length * DOMAIN_LENGTH
+	
+	if helix % 2 == 0:
+		offset += width_vector
+		width_vector *= -1
+
+	design.draw_strand(helix, offset).move(width_vector)
+
+def AddVerticalSlat(
+	design: sc.Design,
+	start_helix: int,
+	offset: int,
+	length: int = 8
+) -> None:
+	""" Add a vertical slat to the design.
+
+	Add a vertical slat to :param design:, the bottom of which begins at :param start_helix:
+	(y direction) and :param offset: (x direction). :param length: determines how many rows
+	this slat will span.
+
+	Will not check if this is a valid placement, so it can trigger a scadnano.StrandError if
+	used incorrectly!
+	"""
+
+	for helix in range(start_helix, start_helix - length, -1):
+
+		start_offset = offset			# Offset of the 5' end of strand
+		crossover_offset = offset		# Offset at which to add the crossover
+		width_vector = DOMAIN_LENGTH	# Either positive or negative domain length
+		
+		# Odd helix: Vertical strands go backward (left)
+		if helix % 2:
+			start_offset += DOMAIN_LENGTH
+			width_vector *= -1
+			# Modify crossover positions depending on strand offset (x position)
+			if (offset / DOMAIN_LENGTH) % 2:
+				crossover_offset += DOMAIN_LENGTH - 1
+
+		# Even helix: Modify crossover positions depending on strand offset (x position)
+		elif (offset / DOMAIN_LENGTH) % 2 == 0:
+			crossover_offset += DOMAIN_LENGTH - 1
+		
+		# Add strand to design
+		design.draw_strand(helix, start_offset).move(width_vector)
+
+		# Add crossovers to create one continuous strand
+		if helix < start_helix:
+			design.add_half_crossover(helix, helix + 1, crossover_offset, helix % 2 == 0)
 
 """
 TODO: Document!
