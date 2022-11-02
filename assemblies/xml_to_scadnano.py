@@ -244,11 +244,40 @@ def AddFrontierTooth(
 
 	Will not check if this is a valid placement, so it can trigger a scadnano.StrandError if
 	used incorrectly!
-
-	TODO: Not yet implemented!
 	"""
 
-	pass
+	tooth_width = DOMAIN_LENGTH * 2
+
+	for helix in range(start_helix, start_helix - height, -1):
+
+		# Odd row
+		if helix % 2:
+			start_offset = offset + tooth_width
+			width_vector = tooth_width * (-1)
+
+		# Even row
+		else:
+			start_offset = offset
+			width_vector = tooth_width
+
+		# Add strand to design
+		design.draw_strand(helix, start_offset).move(width_vector)
+
+		# Determines crossover behavior for arbitrary sized staples
+		full_crossover = not ((helix - start_helix) % 2)
+
+		# Uppermost row: Add nick
+		if helix == start_helix - height + 1:
+			design.add_nick(helix, offset + DOMAIN_LENGTH, helix % 2 == 0)
+
+		# Row is above the start row: Add full crossover
+		if helix < start_helix and full_crossover:
+			design.add_full_crossover(helix, helix + 1, offset + DOMAIN_LENGTH, width_vector > 0)
+
+		# Row is above the start row: Add one half crossover on each edge
+		elif helix < start_helix:
+			design.add_half_crossover(helix, helix + 1, offset, width_vector > 0)
+			design.add_half_crossover(helix, helix + 1, offset + tooth_width - 1, width_vector > 0)
 
 def AddHorizontalSlat(
 	design: sc.Design,
