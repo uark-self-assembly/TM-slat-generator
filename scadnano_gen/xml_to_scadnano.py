@@ -10,8 +10,8 @@ def main():
 		print('Please provide exactly one argument: filename.xml!')
 		exit()
 
-	# Name of .xml assembly file
-	input_file = sys.argv[1]
+	# Path to .xml assembly file (produced by PolyominoTAS)
+	input_file = f'./assemblies/{sys.argv[1]}'
 
 	# TODO: Take user input instead (leave this as default value)
 	domain_length = 5
@@ -19,9 +19,13 @@ def main():
 	# Get slat types from XML file
 	slats = GetPolyominoTypes(input_file)
 
-	# Create scadnano design from assembly and save to file
+	# Create scadnano design from assembly
 	design = BuildScadnanoDesign(slats, input_file, domain_length)
-	design.write_scadnano_file()
+
+	# Write to .sc file with the same name as the .xml assembly
+	assembly_name = sys.argv[1].split('.xml')[0]
+	output_file = f'{assembly_name}.sc'
+	design.write_scadnano_file('./sc_designs/', output_file)
 
 # Driver code
 if __name__ == '__main__':
