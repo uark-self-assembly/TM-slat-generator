@@ -149,5 +149,4 @@ scadnano_gen/sc_designs/*.sc
 !scadnano_gen/sc_designs/right_growth.sc
 
 # Generated oxDNA files
-scadnano_gen/oxdna_files/*.top
-scadnano_gen/oxdna_files/*.dat
+scadnano_gen/oxdna_files/*
