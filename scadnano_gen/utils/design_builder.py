@@ -30,16 +30,6 @@ def BuildScadnanoDesign(
 	# Add strands
 	AddStrands(design, xml_polyominoes, slats, num_helices, domain_length)
 
-	# Add insertions
-	for helix in range(num_helices):
-		# TODO: I don't think this will work for arbitrary domain lengths
-		for offset in range(min_offset, max_offset, 4 * domain_length):
-			# TODO: Lazy way of doing this
-			try:
-				design.add_insertion(helix, offset + 2, 1)
-			except:
-				pass
-
 	return design
 
 """
