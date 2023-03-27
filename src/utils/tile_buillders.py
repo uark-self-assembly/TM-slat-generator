@@ -35,7 +35,13 @@ def GetInputTiles(
 				glue = prefix + a_cells[j]
 				a_glues.append(glue)
 
-		color = help.GetSeedRowColor(i, len(assembly_input) + 1)	# len(assembly_input) + 2 - 1
+		# Quick and dirty change to seed row colors (tiles now colored according to input symbol)
+		max_index = len(assembly_input) + 1		# len(assembly_input) + 2 - 1
+		if i < 2 or i == max_index:
+			color = help.GetSeedRowColor(i, max_index)
+		else:
+			color = help.GetTileColor(assembly_input[i - 2])
+
 		a_slat = CrissCrossSlat(a_name, 'N', a_glues, color)
 		slats.append(a_slat)
 
