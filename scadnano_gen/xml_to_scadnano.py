@@ -1,5 +1,6 @@
 from getopt import getopt
 import sys
+from utils.sequence_mapper import SequenceMapper
 
 from utils.design_builder import BuildScadnanoDesign
 from utils.slat_builder import GetPolyominoTypes
@@ -14,8 +15,11 @@ def main():
 	# Get slat types from XML file
 	slats = GetPolyominoTypes(input_file_path)
 
+	# TODO: Potentially utilize user input
+	sequence_mapper = SequenceMapper()
+
 	# Create scadnano design from assembly
-	design = BuildScadnanoDesign(slats, input_file_path, domain_length)
+	design = BuildScadnanoDesign(slats, input_file_path, domain_length, sequence_mapper)
 
 	# Write to .sc file with the same name as the .xml assembly
 	assembly_name = input_file_name.split('.xml')[0]
@@ -53,6 +57,8 @@ def GetParams(options: list[tuple[str, str]]) -> tuple[str, int, bool]:
 				DisplayHelp()
 		elif option in ['-o', '--oxdna']:
 			oxdna_output = True
+
+		# TODO: Option to provide domain-to-sequence mapping
 
 	if input_file is None:
 		# Display help and terminate program

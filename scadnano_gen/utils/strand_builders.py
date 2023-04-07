@@ -3,6 +3,7 @@ from lxml import etree as ET
 from typing import Union
 
 import scadnano as sc
+from utils.sequence_mapper import SequenceMapper
 
 from utils.slats import CrissCrossSlat, CrissCrossStaple
 
@@ -35,8 +36,8 @@ def AddStrands(
 	xml_polyominoes: ET._Element,
 	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]],
 	num_helices: int,
+	sequence_mapper: SequenceMapper,
 	domain_length: int = 5,
-	domain_to_sequence: Union[dict[str, str], None] = None
 ) -> None:
 
 	for polyomino in xml_polyominoes:
@@ -50,32 +51,23 @@ def AddStrands(
 
 		# Frontier tooth
 		if type(slat) is CrissCrossStaple:
-			# TODO: Pass domain_to_sequence, change position parameters
 			AddFrontierTooth(
 				design,
 				num_helices - y - 1,
 				x * domain_length,
 				len(slat) // 2,
-				domain_length
+				domain_length,
+				sequence_mapper
 			)
 		# Vertical slat
 		elif slat.orientation == 'N':
-			# TODO: Remove
-			# AddVerticalSlat(
-			# 	design,
-			# 	num_helices - y - 1,
-			# 	x * domain_length,
-			# 	len(slat),
-			# 	domain_length
-			# )
 			AddVerticalSlat(
 					slat,
 					design,
 					num_helices - y - 1,
 					x,
 					domain_length,
-					# domain_to_sequence	TODO
-					{'seed1d': 'CCTAG'}
+					sequence_mapper
 				)
 		# Horizontal slat
 		else:
@@ -85,17 +77,16 @@ def AddStrands(
 				num_helices - y - 1,
 				x,
 				domain_length,
-				# domain_to_sequence	TODO
-				{'seed1c*': 'TGCGC'}
+				sequence_mapper
 			)
 
-# TODO: Change for consistency with AddHorizontalStrand
 def AddFrontierTooth(
 	design: sc.Design,
 	start_helix: int,
 	offset: int,
 	height: int,
-	domain_length: int
+	domain_length: int,
+	sequence_mapper: SequenceMapper,
 ) -> None:
 	""" Add a frontier tooth/staple to the design.
 
@@ -105,6 +96,9 @@ def AddFrontierTooth(
 
 	Will not check if this is a valid placement, so it can trigger a scadnano.StrandError if
 	used incorrectly!
+
+	TODO: Sequences are not assigned to these. Add this unless you want them to fly away
+	from the assembly at breakneck speeds.
 	"""
 
 	tooth_width = domain_length * 2
@@ -146,7 +140,7 @@ def AddHorizontalSlat(
 	helix: int,
 	x_position: int,
 	domain_length: int,
-	domain_to_sequence: Union[dict[str, str], None] = None
+	sequence_mapper: SequenceMapper,
 ) -> None:
 	""" Add a horizontal slat to the design.
 
@@ -169,8 +163,10 @@ def AddHorizontalSlat(
 			offset + (i * domain_length),
 			bool(helix % 2),
 			domain_length,
-			# TODO: SO BAD IT NEEDS TO BE CHANGED BEFORE ANYONE CAN SEE THIS CRAP
-			GetSequence(domain_to_sequence, domain_label, InsertionNeeded(offset + (i * domain_length), domain_length), True)
+			AdjustSequence(
+				sequence_mapper.getSequenceByDomain(domain_label),
+				InsertionNeeded(offset + (i * domain_length), domain_length),
+			)
 		)
 
 		for i, domain_label in enumerate(slat)
@@ -183,20 +179,13 @@ def AddHorizontalSlat(
 	# Add strand to design
 	design.add_strand(sc.Strand(domains))
 
-# def AddVerticalSlat(
-# 	design: sc.Design,
-# 	start_helix: int,
-# 	offset: int,
-# 	length: int,
-# 	domain_length: int
-# ) -> None:
 def AddVerticalSlat(
 slat: CrissCrossSlat,
 design: sc.Design,
 start_helix: int,
 x_position: int,
 domain_length: int,
-domain_to_sequence: Union[dict[str, str], None] = None
+sequence_mapper: SequenceMapper,
 ) -> None:
 	""" Add a vertical slat to the design.
 
@@ -218,38 +207,13 @@ domain_to_sequence: Union[dict[str, str], None] = None
 			offset,
 			not bool((start_helix - helix) % 2),
 			domain_length,
-			GetSequence(domain_to_sequence, domain_label, insertion_needed, False)
+			AdjustSequence(sequence_mapper.getSequenceByDomain(domain_label), insertion_needed)
 		)
 
 		for helix, domain_label in enumerate(slat)
 	]
 
 	design.add_strand(sc.Strand(domains))
-
-	# for helix in range(start_helix, start_helix - length, -1):
-
-	# 	start_offset = offset			# Offset of the 5' end of strand
-	# 	crossover_offset = offset		# Offset at which to add the crossover
-	# 	width_vector = domain_length	# Either positive or negative domain length
-		
-	# 	# Odd helix: Vertical strands go backward (left)
-	# 	if helix % 2:
-	# 		start_offset += domain_length
-	# 		width_vector *= -1
-	# 		# Modify crossover positions depending on strand offset (x position)
-	# 		if (offset / domain_length) % 2:
-	# 			crossover_offset += domain_length - 1
-
-	# 	# Even helix: Modify crossover positions depending on strand offset (x position)
-	# 	elif (offset / domain_length) % 2 == 0:
-	# 		crossover_offset += domain_length - 1
-		
-	# 	# Add strand to design
-	# 	design.draw_strand(helix, start_offset).move(width_vector)
-
-	# 	# Add crossovers to create one continuous strand
-	# 	if helix < start_helix:
-	# 		design.add_half_crossover(helix, helix + 1, crossover_offset, helix % 2 == 0)
 
 def BuildDomain(
 	helix: int,
@@ -258,12 +222,11 @@ def BuildDomain(
 	domain_length: int,
 	dna_sequence: Union[str, None]
 ) -> sc.Domain:
-	""" TODO: Document
+	"""Builds a scadnano domain complete with potential insertions and provided base pair sequence.
 
 	TODO
 	"""
 	
-
 	return sc.Domain(
 		helix=helix,
 		forward=forward,
@@ -284,31 +247,19 @@ def GetInsertions(offset: int, domain_length: int) -> list[tuple[int, int]]:
 	else:
 		return list()
 
-def GetSequence(
-	domain_to_sequence: Union[dict[str, str], None],
-	domain_label: str,
+def AdjustSequence(
+	sequence: str,
 	insertion_present: bool,
-	is_horizontal: bool
 ) -> Union[str, None]:
-	"""TODO: Document
-	
-	TODO
+	"""Adds a base pair in the middle of the domain if it needs to account for an insertion.
 	"""
+	# This is an artifact of bad planning on my part, so there's certainly a cleaner way to
+	# go about this that I just don't have time for.
+	if insertion_present:
+		half_index = len(sequence) // 2
+		sequence = sequence[:half_index] + 'T' + sequence[half_index:]
 
-	if domain_to_sequence:
-		# TODO: Default value?
-		sequence = domain_to_sequence.get(domain_label, 'ATATA')
-		
-		if is_horizontal:
-			sequence = 'TATAT'
-
-		# Needs an extra base on insertions in order to output to OxDNA
-		# TODO: Placeholder?
-		if insertion_present:
-			half_index = len(sequence) // 2
-			sequence = sequence[:half_index] + 'T' + sequence[half_index:]
-
-		return sequence
+	return sequence
 
 def InsertionNeeded(offset: int, domain_length: int) -> bool:
 	"""TODO
