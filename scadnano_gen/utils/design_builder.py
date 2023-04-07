@@ -2,6 +2,7 @@ from lxml import etree as ET
 from typing import Union
 
 import scadnano as sc
+from utils.sequence_mapper import SequenceMapper
 
 from utils.slats import CrissCrossSlat, CrissCrossStaple
 from utils.strand_builders import AddStrands, LocateSlat
@@ -12,7 +13,8 @@ TODO: Document!
 def BuildScadnanoDesign(
 	slats: dict[str, Union[CrissCrossSlat, CrissCrossStaple]],
 	input_file: str,
-	domain_length: int
+	domain_length: int,
+	sequence_mapper: SequenceMapper,
 ) -> sc.Design:
 
 	# Access to <Polyominoes> (the child of <assembly>, which is a child of <PolyominoSystem>)
@@ -28,17 +30,14 @@ def BuildScadnanoDesign(
 	design = sc.Design(helices=helices, grid=sc.square)
 	
 	# Add strands
-	AddStrands(design, xml_polyominoes, slats, num_helices, domain_length)
-
-	# Add insertions
-	for helix in range(num_helices):
-		# TODO: I don't think this will work for arbitrary domain lengths
-		for offset in range(min_offset, max_offset, 4 * domain_length):
-			# TODO: Lazy way of doing this
-			try:
-				design.add_insertion(helix, offset + 2, 1)
-			except:
-				pass
+	AddStrands(
+		design,
+		xml_polyominoes,
+		slats,
+		num_helices,
+		sequence_mapper,
+		domain_length,
+	)
 
 	return design
 
